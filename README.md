@@ -1,7 +1,16 @@
-Rain or Shine Tomorrow Prediction.
-Problem Statement::
-The Rain in Australia dataset contains about 10 years of daily weather observations from numerous Australian weather stations. As a data scientist at the Bureau of Meteorology, you are tasked with creating a fully-automated system that can use today's weather data for a given location to predict whether it will rain at the location tomorrow.
+🌦️ Rain or Shine Tomorrow Prediction
+Problem Statement
 
-Logistic regression is a commonly used technique for solving binary classification problems.
+The Rain in Australia dataset contains 10 years (2007–2017) of daily weather observations from numerous Australian stations. As a data scientist at the Bureau of Meteorology, the task is to build an automated system that predicts whether it will rain tomorrow at a given location using today’s weather data.
 
-Predicting whether it will rain tomorrow using today's weather data (classes are "Will Rain" and "Will Not Rain")
+Approach
+
+Leveraged the Rain in Australia dataset (145K+ records), splitting data into training, validation, and test sets by year.
+
+Handled missing values using mean imputations and normalized numerical features with Min–Max scaling (0–1) for balanced impact.
+
+Trained and evaluated a Logistic Regression model, achieving ~85% accuracy, with detailed performance analysis using a confusion matrix.
+
+Tech Stack
+
+Python • Pandas • NumPy • Scikit-learn • Matplotlib • Seaborn
